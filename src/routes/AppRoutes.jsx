@@ -14,7 +14,7 @@ import UserManagement from "../pages/UserManagement/UserManagement";
 import Academic from "../pages/Academic/Academic";
 import Attendance from "../pages/Attendance/Attendance";
 import Fees from "../pages/Fees/Fees";
-import Communication from "../pages/Communication/Communication";
+import Communication from "../pages/communication/Communication";
 import Reports from "../pages/Reports/Reports";
 import Documents from "../pages/Documents/Documents";
 import Settings from "../pages/Settings/Settings";
