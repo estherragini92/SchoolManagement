@@ -1,0 +1,110 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #3438d8;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.logo-box {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.logo-icon {
+  width: 55px;
+  height: 55px;
+  background: white;
+  color: #3438d8;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 10px;
+  font-size: 28px;
+}
+
+.logo-box h2 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.logo-box p {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.menu-link:hover,
+.menu-link.active {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.sidebar-profile {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+}
+
+.profile-circle {
+  width: 42px;
+  height: 42px;
+  background: white;
+  color: #3438d8;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sidebar-profile h4 {
+  font-size: 14px;
+}
+
+.sidebar-profile p {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.logout-btn {
+  margin-top: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  padding: 12px;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-size: 15px;
+}

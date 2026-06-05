@@ -1,0 +1,279 @@
+.teacher-attendance-page {
+  width: 100%;
+}
+
+.save-attendance-btn {
+  border: none;
+  background: #5b3df5;
+  color: white;
+  border-radius: 16px;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.attendance-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.attendance-stat-card {
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.attendance-stat-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.attendance-stat-icon.total {
+  background: #5b3df5;
+}
+
+.attendance-stat-icon.present {
+  background: #22c55e;
+}
+
+.attendance-stat-icon.absent {
+  background: #ef4444;
+}
+
+.attendance-stat-icon.late {
+  background: #f59e0b;
+}
+
+.attendance-stat-card p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.attendance-stat-card h3 {
+  color: #111827;
+  font-size: 26px;
+  margin-top: 5px;
+}
+
+.teacher-attendance-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 24px;
+}
+
+.attendance-mark-card,
+.attendance-analytics-card {
+  background: white;
+  border-radius: 26px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.attendance-toolbar {
+  display: grid;
+  grid-template-columns: 170px 220px 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.attendance-toolbar select,
+.attendance-date,
+.attendance-search {
+  height: 46px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.attendance-toolbar select,
+.attendance-date input,
+.attendance-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  color: #374151;
+}
+
+.attendance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.attendance-row {
+  background: #f9fafb;
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attendance-student-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.attendance-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #5b3df5;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.attendance-student-info h4 {
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.attendance-student-info p {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.attendance-status-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.attendance-status-buttons button {
+  border: none;
+  padding: 10px 13px;
+  border-radius: 14px;
+  background: white;
+  color: #374151;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.attendance-status-buttons button.present.active {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.attendance-status-buttons button.absent.active {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.attendance-status-buttons button.late.active {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.attendance-analytics-card h3 {
+  color: #111827;
+  font-size: 22px;
+}
+
+.attendance-analytics-card > p {
+  color: #6b7280;
+  margin: 5px 0 25px;
+}
+
+.attendance-circle {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: conic-gradient(#5b3df5 0deg, #5b3df5 320deg, #ede9fe 320deg);
+  margin: auto;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+}
+
+.attendance-circle h2 {
+  font-size: 42px;
+}
+
+.attendance-circle span {
+  font-size: 14px;
+}
+
+.class-percent-list {
+  margin-top: 30px;
+  display: grid;
+  gap: 16px;
+}
+
+.class-percent-list div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.class-percent-list span {
+  color: #374151;
+  font-weight: 700;
+}
+
+.class-percent-list strong {
+  color: #5b3df5;
+}
+
+.empty-attendance {
+  text-align: center;
+  color: #6b7280;
+  padding: 25px;
+}
+
+@media (max-width: 1200px) {
+  .attendance-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .teacher-attendance-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .attendance-toolbar {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .attendance-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .attendance-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .attendance-status-buttons {
+    flex-wrap: wrap;
+  }
+}

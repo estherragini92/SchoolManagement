@@ -1,0 +1,277 @@
+.settings-page {
+  width: 100%;
+}
+
+.save-settings-btn {
+  border: none;
+  background: #3438d8;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.settings-tabs {
+  background: white;
+  padding: 8px;
+  border-radius: 18px;
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.settings-tabs button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  background: transparent;
+  color: #6b7280;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.settings-tabs button.active {
+  background: #3438d8;
+  color: white;
+}
+
+.settings-card,
+.integration-card {
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.settings-card h3,
+.integration-card h3 {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.school-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.school-logo {
+  width: 90px;
+  height: 90px;
+  background: #eef2ff;
+  color: #3438d8;
+  border-radius: 22px;
+  display: grid;
+  place-items: center;
+  font-size: 38px;
+}
+
+.upload-logo-btn,
+.add-year-btn {
+  border: none;
+  background: #3438d8;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.settings-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.role-card {
+  background: #f9fafb;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.role-header h4 {
+  color: #111827;
+  font-size: 18px;
+}
+
+.role-header button {
+  border: none;
+  background: #eef2ff;
+  color: #3438d8;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.permission-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.permission-list span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.permission-list svg {
+  color: #22c55e;
+}
+
+.settings-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.year-status {
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.year-status.current {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.year-status.past {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.integration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.integration-card p {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: #d1d5db;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background: #3438d8;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* Modal */
+
+.year-modal {
+  width: 420px;
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+}
+
+.year-modal h3 {
+  color: #111827;
+  margin-bottom: 20px;
+}
+.school-logo-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 2px solid #eef2ff;
+}
+
+.table-actions button {
+  border: none;
+  background: #eef2ff;
+  color: #3438d8;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.table-actions button:last-child {
+  background: #fee2e2;
+  color: #dc2626;
+}

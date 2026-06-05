@@ -1,0 +1,70 @@
+.parent-sidebar {
+  width: 270px;
+  min-height: 100vh;
+  background: #111827;
+  color: white;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.parent-logo-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.parent-logo-icon {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.parent-logo-box h2 {
+  font-size: 24px;
+}
+
+.parent-logo-box p {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.parent-sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.parent-menu-link {
+  color: #d1d5db;
+  text-decoration: none;
+  padding: 13px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.parent-menu-link:hover,
+.parent-menu-link.active {
+  background: #4f46e5;
+  color: white;
+}
+
+.parent-logout-btn {
+  border: none;
+  background: #ef4444;
+  color: white;
+  padding: 13px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.parent-logout-btn:hover {
+  background: #dc2626;
+}

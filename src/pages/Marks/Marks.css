@@ -1,0 +1,352 @@
+.marks-page {
+  width: 100%;
+}
+
+.marks-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.marks-summary-card {
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.marks-summary-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.marks-summary-icon.blue {
+  background: #3438d8;
+}
+
+.marks-summary-icon.green {
+  background: #22c55e;
+}
+
+.marks-summary-icon.orange {
+  background: #f59e0b;
+}
+
+.marks-summary-icon.purple {
+  background: #8b5cf6;
+}
+
+.marks-summary-card p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.marks-summary-card h3 {
+  color: #111827;
+  font-size: 26px;
+  margin-top: 5px;
+}
+
+.marks-layout {
+  display: grid;
+  grid-template-columns: 1fr 310px;
+  gap: 22px;
+}
+
+.marks-filter-card {
+  background: white;
+  padding: 18px;
+  border-radius: 20px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.marks-search {
+  flex: 1;
+  background: #f3f4f6;
+  border-radius: 14px;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6b7280;
+}
+
+.marks-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+.marks-filter-card select {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 12px 15px;
+  outline: none;
+  color: #374151;
+  background: white;
+}
+
+.marks-table-card,
+.top-performers-card {
+  background: white;
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.marks-table-card {
+  overflow-x: auto;
+}
+
+.marks-table-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.marks-table-card th {
+  text-align: left;
+  padding: 16px;
+  color: #6b7280;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.marks-table-card td {
+  padding: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.mark-student {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mark-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #3438d8;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+
+.mark-progress-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mark-progress-track {
+  width: 95px;
+  height: 9px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.mark-progress-fill {
+  height: 100%;
+  background: #3438d8;
+  border-radius: 999px;
+}
+
+.mark-progress-box span {
+  font-weight: 700;
+  color: #374151;
+}
+
+.grade-badge {
+  padding: 8px 13px;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.grade-A\+ {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.grade-A {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.grade-B {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.grade-C {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.grade-D {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.marks-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.marks-actions button {
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #eef2ff;
+  color: #3438d8;
+}
+
+.marks-actions button:last-child {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.top-performers-card h3 {
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.top-performers-card > p {
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+.performer-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f9fafb;
+  padding: 14px;
+  border-radius: 16px;
+  margin-bottom: 13px;
+}
+
+.performer-rank {
+  width: 36px;
+  height: 36px;
+  background: #3438d8;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.performer-item h4 {
+  color: #111827;
+}
+
+.performer-item p {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.marks-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marks-modal {
+  width: 780px;
+  max-width: 94%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.marks-detail-box {
+  background: #f9fafb;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.marks-detail-box h2 {
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.marks-detail-box p {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+@media (max-width: 1200px) {
+  .marks-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .marks-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .marks-filter-card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .marks-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.marks-page,
+.assignments-page {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.marks-layout {
+  grid-template-columns: minmax(0, 1fr) 260px;
+}
+
+.marks-main,
+.assignment-table-card,
+.marks-table-card {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.marks-table-card,
+.assignment-table-card {
+  overflow-x: auto;
+}
+
+.marks-table-card table,
+.assignment-table-card table {
+  min-width: 850px;
+}
+
+.top-performers-card {
+  min-width: 240px;
+  max-width: 260px;
+}

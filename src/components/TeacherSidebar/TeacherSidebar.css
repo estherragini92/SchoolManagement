@@ -1,0 +1,115 @@
+.teacher-sidebar {
+  width: 280px;
+  min-height: 100vh;
+  background: #5b3df5;
+  color: white;
+  padding: 24px 18px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.teacher-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 35px;
+}
+
+.teacher-logo-icon {
+  width: 48px;
+  height: 48px;
+  background: white;
+  color: #5b3df5;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  font-size: 24px;
+}
+
+.teacher-logo-box h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.teacher-logo-box p {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 3px;
+}
+
+.teacher-sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.teacher-menu-link {
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.teacher-menu-link:hover,
+.teacher-menu-link.active {
+  background: white;
+  color: #5b3df5;
+}
+
+.teacher-profile-card {
+  position: absolute;
+  bottom: 90px;
+  left: 18px;
+  right: 18px;
+  background: rgba(255, 255, 255, 0.14);
+  padding: 16px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.teacher-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  color: #5b3df5;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.teacher-profile-card h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.teacher-profile-card p {
+  margin-top: 4px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.teacher-logout-btn {
+  position: absolute;
+  bottom: 24px;
+  left: 18px;
+  right: 18px;
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  padding: 14px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}

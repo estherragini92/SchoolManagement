@@ -1,0 +1,288 @@
+.communication-page {
+  width: 100%;
+}
+
+.communication-tabs {
+  background: white;
+  padding: 8px;
+  border-radius: 18px;
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.communication-tabs button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 14px;
+  cursor: pointer;
+  background: transparent;
+  color: #6b7280;
+  font-weight: 700;
+}
+
+.communication-tabs button.active {
+  background: #3438d8;
+  color: white;
+}
+
+.communication-card,
+.broadcast-form-card,
+.broadcast-stats-card {
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.announcement-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #3438d8;
+  font-weight: 700;
+}
+
+.priority,
+.comm-status {
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.priority.high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.priority.medium {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.comm-status.published {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.comm-status.scheduled {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.notification-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.notification-card {
+  background: white;
+  border-radius: 22px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.notification-icon {
+  width: 50px;
+  height: 50px;
+  background: #eef2ff;
+  color: #3438d8;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+}
+
+.notification-card h4 {
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.notification-card p {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.broadcast-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 22px;
+}
+
+.broadcast-form-card h3,
+.broadcast-stats-card h3 {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 18px;
+}
+
+.broadcast-type {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.broadcast-type button {
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 12px 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  font-weight: 700;
+}
+
+.broadcast-type button.active {
+  background: #3438d8;
+  color: white;
+  border-color: #3438d8;
+}
+
+.send-btn {
+  border: none;
+  background: #3438d8;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+.broadcast-stat {
+  background: #f9fafb;
+  padding: 18px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.broadcast-stat svg {
+  color: #3438d8;
+  font-size: 24px;
+}
+
+.broadcast-stat p {
+  color: #6b7280;
+}
+
+.broadcast-stat h2 {
+  color: #111827;
+  margin-top: 5px;
+
+}
+.comm-search-card {
+  background: white;
+  padding: 14px 18px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.comm-search-card input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+.communication-modal {
+  width: 760px;
+  max-width: 94%;
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.broadcast-history-card {
+  grid-column: 1 / -1;
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.broadcast-history-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+
+.broadcast-history-item h4 {
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.broadcast-history-item p {
+  color: #4b5563;
+  margin: 6px 0;
+}
+
+.broadcast-history-item small {
+  color: #6b7280;
+}
+
+.broadcast-history-item button,
+.table-actions button {
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #fee2e2;
+  color: #dc2626;
+}
+.communication-modal {
+  position: relative;
+  z-index: 1001;
+}
+
+.communication-modal input,
+.communication-modal select,
+.communication-modal textarea {
+  background: white;
+}
+
+.communication-modal textarea {
+  min-height: 110px;
+}
+.communication-modal {
+  width: 760px;
+  max-width: 94%;
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  z-index: 9999;
+}
+
+.communication-modal input,
+.communication-modal select,
+.communication-modal textarea {
+  width: 100%;
+  background: white;
+}
+
+.communication-modal textarea {
+  min-height: 110px;
+}

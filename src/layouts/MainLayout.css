@@ -1,0 +1,19 @@
+.main-layout {
+  min-height: 100vh;
+  background: #eefafa;
+}
+
+.main-content {
+  margin-left: 270px;
+  min-height: 100vh;
+  background: #eefafa;
+}
+
+.page-content {
+  min-height: calc(100vh - 92px);
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px 30px 45px;
+  background: #eefafa;
+}

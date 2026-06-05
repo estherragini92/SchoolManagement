@@ -1,0 +1,279 @@
+.teacher-messages-page {
+  width: 100%;
+}
+
+.messages-header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.messages-header-actions button {
+  border: none;
+  background: white;
+  color: #374151;
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.messages-header-actions .new-message-btn {
+  background: #5b3df5;
+  color: white;
+}
+
+.teacher-chat-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 22px;
+  height: calc(100vh - 170px);
+}
+
+.chat-sidebar,
+.chat-window {
+  background: white;
+  border-radius: 26px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.chat-sidebar {
+  padding: 18px;
+}
+
+.chat-search {
+  background: #f3f4f6;
+  border-radius: 14px;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.chat-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+.chat-unread-box {
+  background: #f4f2ff;
+  color: #5b3df5;
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: calc(100vh - 310px);
+  overflow-y: auto;
+}
+
+.chat-user {
+  border: none;
+  background: #f9fafb;
+  border-radius: 18px;
+  padding: 14px;
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.chat-user.active {
+  background: #eee9ff;
+}
+
+.chat-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #5b3df5;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.chat-avatar.large {
+  width: 55px;
+  height: 55px;
+  font-size: 22px;
+}
+
+.chat-user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.chat-user-info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-user-info h4 {
+  color: #111827;
+  font-size: 15px;
+}
+
+.chat-user-info span {
+  background: #ef4444;
+  color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+}
+
+.chat-user-info p {
+  color: #6b7280;
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.chat-user-info small {
+  color: #374151;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-window-header {
+  height: 86px;
+  padding: 18px 22px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.chat-window-header h3 {
+  color: #111827;
+}
+
+.chat-window-header p {
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background: #f8fafc;
+}
+
+.message-row {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.message-row.teacher {
+  justify-content: flex-end;
+}
+
+.message-row.other {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: 62%;
+  padding: 13px 15px;
+  border-radius: 18px;
+}
+
+.message-row.teacher .message-bubble {
+  background: #5b3df5;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+.message-row.other .message-bubble {
+  background: white;
+  color: #111827;
+  border-bottom-left-radius: 5px;
+}
+
+.message-bubble p {
+  margin-bottom: 6px;
+}
+
+.message-bubble span {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.chat-input-box {
+  height: 76px;
+  padding: 14px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-input-box input {
+  flex: 1;
+  height: 46px;
+  border: none;
+  outline: none;
+  background: #f3f4f6;
+  border-radius: 14px;
+  padding: 0 14px;
+}
+
+.chat-input-box button {
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: #eef2ff;
+  color: #5b3df5;
+  cursor: pointer;
+}
+
+.chat-input-box .send-chat-btn {
+  background: #5b3df5;
+  color: white;
+}
+
+.empty-chat {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: #6b7280;
+}
+
+@media (max-width: 1000px) {
+  .teacher-chat-layout {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .chat-window {
+    min-height: 600px;
+  }
+}

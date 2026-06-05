@@ -1,0 +1,11 @@
+.parent-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.parent-main-content {
+  flex: 1;
+  padding: 24px;
+  overflow-x: auto;
+}

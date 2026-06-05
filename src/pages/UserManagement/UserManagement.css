@@ -1,0 +1,392 @@
+.user-page {
+  width: 100%;
+}
+
+.page-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-title-row h2 {
+  font-size: 28px;
+  color: #111827;
+}
+
+.page-title-row p {
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+.page-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.import-btn,
+.add-btn {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+}
+
+.import-btn {
+  background: white;
+  color: #3438d8;
+  border: 1px solid #dbeafe;
+}
+
+.add-btn {
+  background: #3438d8;
+  color: white;
+}
+
+.tabs {
+  background: white;
+  padding: 8px;
+  border-radius: 18px;
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 14px;
+  cursor: pointer;
+  background: transparent;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.tab.active {
+  background: #3438d8;
+  color: white;
+}
+
+.filter-card {
+  background: white;
+  padding: 18px;
+  border-radius: 20px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.student-search {
+  flex: 1;
+  background: #f3f4f6;
+  border-radius: 14px;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6b7280;
+}
+
+.student-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+.filter-card select {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 12px 15px;
+  outline: none;
+  color: #374151;
+}
+
+.table-card {
+  background: white;
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f9fafb;
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+th {
+  color: #6b7280;
+  font-weight: 700;
+}
+
+td {
+  color: #374151;
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.student-avatar {
+  width: 40px;
+  height: 40px;
+  background: #3438d8;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.status {
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.active-status {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.inactive-status {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.action-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-icons button {
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #f3f4f6;
+  color: #3438d8;
+}
+
+/* MODAL */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.55);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.student-modal {
+  width: 850px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.modal-header h3 {
+  font-size: 24px;
+  color: #111827;
+}
+
+.modal-header button {
+  border: none;
+  background: #f3f4f6;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.photo-upload {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.photo-circle {
+  width: 85px;
+  height: 85px;
+  background: #eef2ff;
+  color: #3438d8;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+}
+
+.photo-upload button {
+  border: none;
+  background: #3438d8;
+  color: white;
+  padding: 11px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.student-modal h4 {
+  margin: 22px 0 15px;
+  color: #111827;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.form-group label {
+  color: #374151;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 13px 14px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.cancel-btn,
+.save-btn {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.cancel-btn {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.save-btn {
+  background: #3438d8;
+  color: white;
+}
+.student-photo,
+.photo-preview {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.photo-preview {
+  width: 85px;
+  height: 85px;
+}
+
+.upload-photo-btn {
+  background: #3438d8;
+  color: white;
+  padding: 11px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.student-photo,
+.photo-preview {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.photo-preview {
+  width: 85px;
+  height: 85px;
+}
+
+.upload-photo-btn {
+  background: #3438d8;
+  color: white;
+  padding: 11px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.user-page .modal-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.55) !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.user-page .student-modal {
+  background: #ffffff !important;
+  width: 900px !important;
+  max-width: 95vw !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+  border-radius: 24px !important;
+  padding: 24px !important;
+  position: relative !important;
+  z-index: 1000000 !important;
+}
